@@ -1,6 +1,16 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+const button = document.querySelectorAll('.dropdown')
+
+button.forEach((el) => {
+    el.addEventListener('click', (e)=> {
+        el.lastElementChild.classList.toggle("show")   
+    })
+    
+})
+
+// function myFunction(e) {
+//     console.log(e.target)
+//     // document.getElementById("myDropdown").classList.toggle("show");
+//   }
 
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
