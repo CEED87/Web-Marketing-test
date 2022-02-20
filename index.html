@@ -28,10 +28,12 @@
                 <span class="separators">></span>
                 <a  href="" class="breadcrumb">Trucks</a>
                 <span class="separators">></span>
-                <a href="" class="breadcrumb">DAF</a>
+                <a href="" class="breadcrumb open">DAF</a>
             </div>
         </div>
 
+        <div class="body">
+    
         <div class="filter">
             <div class="frame1">
                 <h3>26 Results Found</h3>
@@ -39,96 +41,109 @@
                 <div class="hr"></div>
 
                 <form action="" method="get">
-                    <div class="checkboxes">
-                        <p class="par">Param 1</p>
-                        <div class="line"></div>
+
+                    <p class="par">Сategory</p>
+                    <div class="line"></div>
+
+                    <div class="parameters">
                         <div class="check">
                             <input class="checkbox" type="checkbox" name="" id="value1">
-                            <label for="value1">value 1</label>
+                            <label for="value1">Dealer</label>
                         </div>
                         <div class="check">
                             <input class="checkbox" type="checkbox" name="" id="value2">
-                            <label for="value2">value 2</label>
+                            <label for="value2">Private</label>
                         </div>
                         <div class="check">
                             <input class="checkbox" type="checkbox" name="" id="value3">
-                            <label for="value3">value 3</label>
+                            <label for="value3">6x2</label>
                         </div>
                         <div class="check">
                             <input class="checkbox" type="checkbox" name="" id="value4">
-                            <label for="value4">value 4</label>
+                            <label for="value4">4x4</label>
                         </div>
                         <div class="check">
                             <input class="checkbox" type="checkbox" name="" id="value5">
-                            <label for="value5">value 5</label>
+                            <label for="value5">4x2</label>
                         </div>
-                        
                     </div>
 
-                    <div class="radios">
-                        <p class="par">Param 2</p>
-                        <div class="line"></div>
+                    <p class="par">Сondition</p>
+                    <div class="line"></div>
 
+                    <div class="parameters">
                         <div class="radio">
                             <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
-                            <label for="color-1">Indigo</label>
+                            <label for="color-1">New</label>
                           </div>
                         
                           <div class="radio">
                             <input class="custom-radio" type="radio" id="color-2" name="color" value="red">
-                            <label for="color-2">Red</label>
+                            <label for="color-2">Used</label>
                           </div>
                         
                           <div class="radio">
-                            <input class="custom-radio" type="radio" id="color-3" name="color" value="brown">
-                            <label for="color-3">Brown</label>
+                            <input class="custom-radio" type="radio" id="color-3" name="color" value="brown" checked>
+                            <label for="color-3">All</label>
                           </div>
                     </div>
 
-                    <div class="text">
-                        <p class="par">Param 3</p>
-                        <div class="line"></div>
+                    <p class="par">Year</p>
+                    <div class="line"></div>
+
+                    <div class="parameters">
                         <div class="text_form">
                             <input type="text" name="" id="" placeholder="min">
                             <input type="text" name="" id="" placeholder="max">
                         </div>
                     </div>
 
-                    <div class="serch">
-                        <p class="par">Param 4</p>
-                        <div class="line"></div>
-                        <input type="text" name="" id="" placeholder="min">
+                    <p class="par">Price</p>
+                    <div class="line"></div>
+
+                    <div class="parameters">
+                        <input type="text" name="serch" id="" placeholder="min">
                     </div>
                     <input type="button" value="SEARCH">
                     
                 </form>
             </div>
         </div>
+
     
         <div class="main">
             <div class="heading">
                 <h1>Heading Level 1</h1>
             </div>
             <div class="pagination">
-                <div class="rectangle"><span class="page"><</span></div>
-                <div class="rectangle"><span class="page">1</span></div>
-                <div class="rectangle"><span class="page">2</span></div>
-                <div class="rectangle"><span class="page">></span></div>
+                <a href="#">
+                    <div class="rectangle"><span class="page"><</span></div>
+                </a>
+                <a href="#">
+                    <div class="rectangle"><span class="page">1</span></div>
+                </a>
+                <a href="#">
+                    <div class="rectangle active"><span class="page">2</span></div>
+                </a>
+                <a href="#">
+                    <div class="rectangle end"><span class="page">></span></div>
+                </a>
+                
                 <div class="sort-by">
                     <p class="par">Sort by</p>
                     <div class="dropdown">
                         <button class="dropbtn">Sort options</button>
                         <div class="sort"></div>
                         <div id="myDropdown" class="dropdown-content">
-                          <span>Главная</span>
-                          <span>О Нас</span>
-                          <span>Контакты</span>
+                          <span>Price</span>
+                          <span>Year</span>
+                          <span>Mileage</span>
                         </div>
                       </div>
                 </div>
             </div>
             
-            <div class="listing">
+            <div class="listing" id="1">
                 <a href="#">
                     <div class="listing-item">
                         <div class="rectangle-img">
@@ -137,6 +152,7 @@
                         <h3>DAF XF 440 6X2 SSC Intarder Standklima Liftachse ACC Euro 6</h3>
                         <span class="cost">EUR 25900</span>
                         <div class="item-description">
+                            
                             Item Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis distinctio, officia tenetur a eaque deleniti, impedit accusamus, alias provident sint id odio neque laudantium! Saepe quisquam libero soluta itaque? 
                         </div>
                         <div class="year set">
@@ -151,7 +167,7 @@
                     </div>
                 </a>
             </div>
-            <div class="listing">
+             <div class="listing" id="2">
                 <a href="#">
                     <div class="listing-item">
                         <div class="rectangle-img">
@@ -175,14 +191,37 @@
                 </a>
             </div>
             
-            <div class="listing">
+            <div class="listing" id="3">
                 <a href="#">
                     <div class="listing-item">
                     <div class="rectangle-img">
-                        <img src="img/1.jpg" alt="foto">
+                        <img src="img/3.jpg" alt="foto">
                     </div>
-                    <h3>DAF XF 440 6X2 SSC Intarder Standklima Liftachse ACC Euro 6</h3>
-                    <span class="cost">EUR 25900</span>
+                    <h3>DAF CF 75.310 + Manual</h3>
+                    <span class="cost">EUR 7950</span>
+                    <div class="item-description">
+                        Item Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis distinctio, officia tenetur a eaque deleniti, impedit accusamus, alias provident sint id odio neque laudantium! Saepe quisquam libero soluta itaque? 
+                    </div>
+                    <div class="year set">
+                        <span class="char">2006</span>
+                    </div>
+                    <div class="mileage set">
+                        <span class="char">1026087 km</span>
+                    </div>
+                    <div class="size set">
+                        <span class="char">4x4</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="listing" id="4">
+                <a href="#">
+                    <div class="listing-item">
+                    <div class="rectangle-img">
+                        <img src="img/4.jpg" alt="foto">
+                    </div>
+                    <h3>DAF CF 65.300 + Euro 5 + lift</h3>
+                    <span class="cost">EUR 25950</span>
                     <div class="item-description">
                         Item Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis distinctio, officia tenetur a eaque deleniti, impedit accusamus, alias provident sint id odio neque laudantium! Saepe quisquam libero soluta itaque? 
                     </div>
@@ -190,87 +229,67 @@
                         <span class="char">2014</span>
                     </div>
                     <div class="mileage set">
-                        <span class="char">486647 km</span>
+                        <span class="char">537307 km</span>
                     </div>
                     <div class="size set">
-                        <span class="char">6x2</span>
+                        <span class="char">4x2</span>
                     </div>
                 </div>
                 </a>
             </div>
-            <div class="listing">
+            <div class="listing" id="5">
                 <a href="#">
                     <div class="listing-item">
                     <div class="rectangle-img">
-                        <img src="img/1.jpg" alt="foto">
+                        <img src="img/5.jpg" alt="foto">
                     </div>
-                    <h3>DAF XF 440 6X2 SSC Intarder Standklima Liftachse ACC Euro 6</h3>
-                    <span class="cost">EUR 25900</span>
+                    <h3>DAF XF 105.410 + Combi floor + Euro 5</h3>
+                    <span class="cost">EUR 19500</span>
                     <div class="item-description">
                         Item Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis distinctio, officia tenetur a eaque deleniti, impedit accusamus, alias provident sint id odio neque laudantium! Saepe quisquam libero soluta itaque? 
                     </div>
                     <div class="year set">
-                        <span class="char">2014</span>
+                        <span class="char">2009</span>
                     </div>
                     <div class="mileage set">
-                        <span class="char">486647 km</span>
+                        <span class="char">1142998 km</span>
                     </div>
                     <div class="size set">
-                        <span class="char">6x2</span>
+                        <span class="char">4x2</span>
                     </div>
                 </div>
                 </a>
             </div>
-            <div class="listing">
+            <div class="listing" id="6">
                 <a href="#">
                     <div class="listing-item">
                     <div class="rectangle-img">
-                        <img src="img/1.jpg" alt="foto">
+                        <img src="img/6.jpg" alt="foto">
                     </div>
-                    <h3>DAF XF 440 6X2 SSC Intarder Standklima Liftachse ACC Euro 6</h3>
-                    <span class="cost">EUR 25900</span>
+                    <h3>DAF 105 XF 460 6x2, EURO 5, Airco, Combi</h3>
+                    <span class="cost">EUR 18750</span>
                     <div class="item-description">
                         Item Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis distinctio, officia tenetur a eaque deleniti, impedit accusamus, alias provident sint id odio neque laudantium! Saepe quisquam libero soluta itaque? 
                     </div>
                     <div class="year set">
-                        <span class="char">2014</span>
+                        <span class="char">2012</span>
                     </div>
                     <div class="mileage set">
-                        <span class="char">486647 km</span>
+                        <span class="char">897000 km</span>
                     </div>
                     <div class="size set">
                         <span class="char">6x2</span>
                     </div>
                 </div>
                 </a>
-            </div>
-            <div class="listing">
-                <a href="#">
-                    <div class="listing-item">
-                    <div class="rectangle-img">
-                        <img src="img/1.jpg" alt="foto">
-                    </div>
-                    <h3>DAF XF 440 6X2 SSC Intarder Standklima Liftachse ACC Euro 6</h3>
-                    <span class="cost">EUR 25900</span>
-                    <div class="item-description">
-                        Item Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis distinctio, officia tenetur a eaque deleniti, impedit accusamus, alias provident sint id odio neque laudantium! Saepe quisquam libero soluta itaque? 
-                    </div>
-                    <div class="year set">
-                        <span class="char">2014</span>
-                    </div>
-                    <div class="mileage set">
-                        <span class="char">486647 km</span>
-                    </div>
-                    <div class="size set">
-                        <span class="char">6x2</span>
-                    </div>
-                </div>
-                </a>
-            </div>
+            </div> 
+
+            <div class="empty"><h1>Not faund</h1></div>
+
             <div class="pagination">
                 <div class="rectangle"><span class="page"><</span></div>
                 <div class="rectangle"><span class="page">1</span></div>
-                <div class="rectangle"><span class="page">2</span></div>
+                <div class="rectangle active"><span class="page">2</span></div>
                 <div class="rectangle"><span class="page">></span></div>
                 <div class="sort-by">
                     <p class="par">Sort by</p>
@@ -278,9 +297,9 @@
                         <button class="dropbtn">Sort options</button>
                         <div class="sort"></div>
                         <div id="" class="dropdown-content">
-                          <span>Главная</span>
-                          <span>О Нас</span>
-                          <span>Контакты</span>
+                            <span>Price</span>
+                            <span>Year</span>
+                            <span>Mileage</span>
                         </div>
                       </div>
                 </div>
@@ -288,16 +307,18 @@
             
             <div class="info">
                 <p class="text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quos ullam atque accusantium ratione molestias soluta, provident nobis, assumenda dolorum voluptas incidunt inventore quia reiciendis quis? Quis quo molestias repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda et at eveniet! Fugiat velit unde necessitatibus? Debitis illo vero aut. Iusto dolores, cupiditate error expedita veniam laborum repudiandae aspernatur eos?
+                    A truck (a heavy load vehicle) – is a means of transport intended for load transportation. The concept of a “truck” has a rather broad definition and includes tractor units, as well as commercial vehicles and even pick-ups. A truck consists of a traction part and a load platform. Now let’s take into consideration trucks with the integral load platform and the GVW that reaches up to 7, 5 tons.
                 </p>
                 <p class="text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quos ullam atque accusantium ratione molestias soluta, <a href="#">link</a>  provident nobis, assumenda dolorum voluptas incidunt inventore quia reiciendis quis? Quis quo molestias repellat?
+                    Trucks’ axle configuration may vary from 4x2 to 8x8 according to the engine capacity and the purpose of a truck. Thus, quarry and construction dump trucks are equipped with 4x4, 6x4, 6x6 and 8x6 wheel-bases more often.
                 </p>
                 <p class="text">
-                    Iste, aliquid ducimus! Delectus in nisi quaerat temporibus blanditiis, molestias deleniti ea illum laudantium numquam. Laborum vero eligendi minus recusandae culpa sequi exercitationem iusto, ipsum sed suscipit fuga molestias veritatis!
+                    Trucks are equipped with all modern passive and active safety systems in order to use the truck in urban areas or on the highways. These systems include collision prevention system, hill hold control, self-adjusting headlights, etc. Moreover, a contemporary truck meets all the requirements concerning driver’s comfort and the ergonomics of the cabin.
                 </p>
             </div>
         </div>
+        </div>
+        <!-- <div></div> -->
 
         <div class="footer">
             <div class="footer-content">
