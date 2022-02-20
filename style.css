@@ -1,10 +1,12 @@
 body {
     background-color: #E5E5E5;
 }
+
 .bgr {
     background-color:white;
     border:solid 1px rgba(44, 43, 43, 0);
 }
+
 .content {
     margin: 40px 150px 0px 150px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -16,21 +18,26 @@ body {
     font-weight: bold;
     line-height: 21px;
 }
+
 .navbar {
     margin-top: 20px;
 }
+
 .navlincs {
     margin-top: 15px;
     margin-bottom: 16px;
 }
+
 .navlink {
     margin: 0px 32px 0px 16px;
     font-size: 16px;
     color: #8D8D8D;
 }
+
 .navlink:hover {
     cursor: pointer;
 }
+
 .crumbs {
     margin: 13px 0px 13px 16px;
     font-size: 12px;
@@ -63,19 +70,23 @@ h1 {
     float: left;
    
 }
+
 .main {
     min-height: 721px;
     min-width: 750px;
     max-width: 1036px;
     margin-left: 287px;
 }
+
 .frame1 {
     margin: 16px 16px 0px 16px;
     height: 97%;
 }
+
 h3 {
     margin: 0px;
 }
+
 .hr {
     border-bottom: solid 1px #BDBDBD;
     margin-top: 16.5px;
@@ -100,11 +111,13 @@ h3 {
     z-index: -1;
     opacity: 0;
 }
+
 .checkbox+label {
     display: block;
     align-items: center;
     user-select: none;
 }
+
 .checkbox+label::before {
 content: '';
 display: inline-block;
@@ -118,10 +131,12 @@ background-repeat: no-repeat;
 background-position: center center;
 background-size: 50% 50%;
 }
+
 .checkbox:checked+label::before {
 background-color: #2D9CDB;
 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
+
 .check {
 margin-bottom: 14px;
 color:#4F4F4F
@@ -133,6 +148,7 @@ color:#4F4F4F
     margin-bottom: 11px;
     margin-right: 10px;
 }
+
 .line {
     float: right;
     margin-top: 20px;
@@ -142,28 +158,25 @@ color:#4F4F4F
     border-bottom: solid 1px #828282;
     transform: rotate(45deg);
 }
+
 .line:hover {
     cursor: pointer;
 }
 
-
-
-   /* для элемента input c type="radio" */
-   .custom-radio {
+.custom-radio {
     position: absolute;
     z-index: -1;
     opacity: 0;
-  }
+}
 
-  /* для элемента label связанного с .custom-radio */
-  .custom-radio+label {
+
+.custom-radio+label {
     display: inline-flex;
     align-items: center;
     user-select: none;
-  }
+}
 
-  /* создание в label псевдоэлемента  before со следующими стилями */
-  .custom-radio+label::before {
+.custom-radio+label::before {
     content: '';
     display: inline-block;
     width: 1em;
@@ -176,21 +189,24 @@ color:#4F4F4F
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
-  }
+}
 
- .radio {
+.radio {
     margin-bottom: 14px;
 }
+
 .custom-radio {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
+
 .custom-radio+label {
     display: inline-flex;
     align-items: center;
     user-select: none;
 }
+
 .custom-radio+label::before {
     content: '';
     display: inline-block;
@@ -205,18 +221,22 @@ color:#4F4F4F
     background-position: center center;
     background-size: 50% 50%;
 }
- .radio:not(:disabled):not(:checked)+label:hover::before {
+
+.radio:not(:disabled):not(:checked)+label:hover::before {
     border-color: #e90202;
 } 
+
 .custom-radio:not(:disabled):active+label::before {
     background-color: #2D9CDB;
     border-color: #2D9CDB;
 }
+
 .custom-radio:focus+label::before {
     border-color: #2D9CDB;
     background-color: #2D9CDB;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
+
 .custom-radio:focus:not(:checked)+label::before {
     border-color: #2D9CDB;
 }
@@ -225,11 +245,11 @@ color:#4F4F4F
     border-color: #2D9CDB;
     background-color: #2D9CDB;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-  }
+}
 
 .custom-radio:disabled+label::before {
     background-color: #e9ecef;
-  } 
+} 
 
 .text_form input {
     width: 104px;
@@ -247,6 +267,7 @@ color:#4F4F4F
     border: solid 0.5px #BDBDBD;
     font-size: 16px;
 }
+
 [type="button"] {
     width: 236px;
     height: 35px;
@@ -256,6 +277,7 @@ color:#4F4F4F
     color: #FFFFFF;
     background-color:#56CCF2
 }
+
 .rectangle {
     width: 35px;
     height: 35px;
@@ -265,6 +287,7 @@ color:#4F4F4F
    font-size: 16px;
    margin-right: 16px;
 }
+
 .page {
     line-height: 35px;
 }
@@ -316,7 +339,6 @@ color:#4F4F4F
 .show {display: block;}
 
 .sort-by {
-    /* display: inline-block; */
     float: right;
 }
 
@@ -353,11 +375,8 @@ color:#4F4F4F
 }
 
 .cost {
-    /* position: absolute; */
     float: right;
     margin: 16px;
-    /* top: 16px;
-    left: 975px; */
 }
 
 .rectangle-img {
@@ -486,7 +505,6 @@ a {
     width: 14px;
     height: 14px; 
     size: 14px;
-    /* border: solid 1px red; */
     margin-top: 39px;
     margin-left: 4px;
 }
@@ -500,7 +518,6 @@ a {
     position: absolute;
     width: 226px;
     height: 49px;
-    /* display: inline-block; */
     top: 143px;
     left: 44px;
     color: #4F4F4F
@@ -539,10 +556,12 @@ a {
     height: 420px;
     
 }
+
 .empty > h1 {
     line-height: 420px;
 }
- .visible {
+
+.visible {
     display: block;
 }
 

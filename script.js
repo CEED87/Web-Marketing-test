@@ -170,7 +170,6 @@ const yearSort = (arrObj, arrInp) => {
   }
 }
 
-
 const sortPrice = (arrObj, arrInp) => {
 
   let newArr = [];
@@ -188,15 +187,11 @@ const sortPrice = (arrObj, arrInp) => {
   filter(arrObj)
 }
 
-
-
-
 arrow.forEach((item) => {
   item.addEventListener('click', (e) => {
     e.target.nextElementSibling.classList.toggle('deployed')
   })
 })
-
 
 btn.addEventListener('click', () => {
 
