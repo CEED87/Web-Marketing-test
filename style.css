@@ -331,6 +331,10 @@ color:#4F4F4F
     transform: rotate(45deg);
 }
 
+.sort:hover {
+    cursor: pointer;
+}
+
 .listing-item {
     position: relative;
     margin-top: 16px;
